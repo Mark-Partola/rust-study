@@ -1,7 +1,11 @@
 mod annotations_1;
 mod crates_1;
 mod enums_1;
+mod generics_1;
+mod generics_2;
+mod generics_3;
 mod io_1;
+mod io_2;
 mod iterators_1;
 mod iterators_2;
 mod match_1;
@@ -11,6 +15,9 @@ mod modules_1;
 mod option_1;
 mod option_2;
 mod result_1;
+mod traits_1;
+mod traits_2;
+mod traits_3;
 
 fn main() {
     annotations_1::run_example();
@@ -25,5 +32,12 @@ fn main() {
     modules_1::run_example();
     crates_1::run_example();
     modules::auth::login();
-    io_1::run_example(true);
+    io_1::run_example(false);
+    io_2::run_example(false);
+    traits_1::run_example();
+    traits_2::run_example();
+    traits_3::run_example();
+    generics_1::run_example();
+    generics_2::run_example();
+    generics_3::run_example();
 }
